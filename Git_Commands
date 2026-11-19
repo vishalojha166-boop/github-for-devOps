@@ -1,0 +1,36 @@
+
+ git status
+    6  git commit -m "added test"
+    9  git config --global --list
+   10  git config --global --list
+   11  git config --global --list
+   12  git config --global --list
+   13  git commit -m "added test"
+   14  rm testing.py
+   15  ls
+   16  git status
+   17  git restore "testing.py"
+   18  git status
+   19  ls
+   20  vi testing.py
+   21  git status
+   22  git status =
+   23  touch git.txt
+   24  vi git.txt
+   25  ll
+   26  git staus
+   27  git status
+   28  git add git.txt
+   29  git status
+   30  git commit -m "git.txt added"
+   31  git status
+   32  git remote add origin https://github.com/vishalojha166-boop/github-for-devOps.git
+   33  git remote -v
+   34  git remote -v
+   35  ls l
+   36  ls -l
+   3  38  git remote -v
+   39  git push origin master
+   40  ls -l
+   41  cd work/
+   
