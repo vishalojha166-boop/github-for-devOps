@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
+
   code:
     runs-on: ubuntu-latest
     steps:
@@ -11,18 +12,21 @@ jobs:
         run: echo "Clonning the code"
 
   build:
+    needs: code
     runs-on: ubuntu-latest
     steps:
       - name: Build using Docker
         run: echo  "bulding the code"
         
   test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: running test cases
         run: echo "testing the code"
       
   deploy:
+    needs: [build,test]
     runs-on: ubuntu-latest
     steps:
       - name: deploy code
